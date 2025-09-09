@@ -44,13 +44,13 @@ function About() {
               <div className="about-text">
                 <h2 className="about-title">Hakkımızda</h2>
                 <p className="about-subtitle">
-                  2019 yılında İbrahim Çoban tarafından Bosna-Hersek'in Brčko şehrinde kurulan
+                  2019 yılında İbrahim Çoban tarafından Bosna-Hersek&apos;in Brčko şehrinde kurulan
                   İçtaş Yapı İnşaat doo, inşaat sektöründe güvenilir ve yenilikçi çözümler sunmayı
                   amaçlayan bir firmadır.
                 </p>
                 <p className="about-description">
                   Kurulduğu günden bu yana kalite, güven ve müşteri memnuniyetini ön planda tutarak
-                  büyüyen şirketimiz; Bosna-Hersek'in farklı bölgelerinde fabrika, alışveriş merkezi,
+                  büyüyen şirketimiz; Bosna-Hersek&apos;in farklı bölgelerinde fabrika, alışveriş merkezi,
                   depo ve konut projeleri başarıyla gerçekleştirmektedir.
                 </p>
               </div>
@@ -97,7 +97,7 @@ function About() {
               <div className="card-icon">🚀</div>
               <h3 className="card-title">Misyonumuz</h3>
               <ul className="mission-list">
-                <li>Bosna-Hersek'in farklı bölgelerinde fabrika, AVM, depo ve konut projeleriyle modern ve güvenilir yaşam ve iş alanları inşa etmek.</li>
+                <li>Bosna-Hersek&apos;in farklı bölgelerinde fabrika, AVM, depo ve konut projeleriyle modern ve güvenilir yaşam ve iş alanları inşa etmek.</li>
                 <li>Müşterilerimize fonksiyonel, estetik ve uzun ömürlü yapılar sunarak yatırım değerini en üst seviyeye taşımak.</li>
                 <li>İnşaat sektöründe kalite, güvenlik ve sürdürülebilirlik ilkelerinden ödün vermeden çalışmak.</li>
                 <li>Teknoloji ve mühendisliği bir araya getirerek, çevreye duyarlı ve geleceğe dönük çözümler geliştirmek.</li>
