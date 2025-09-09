@@ -56,17 +56,6 @@ function Navbar() {
               <button
                 onClick={() => {
                   openBar();
-                  scrollToId('services');
-                }}
-                style={{ cursor: "pointer", background: "none", border: "none", color: "inherit", fontSize: "inherit", fontWeight: "inherit" }}
-              >
-                Hizmetler
-              </button>
-            </li>
-            <li>
-              <button
-                onClick={() => {
-                  openBar();
                   scrollToId('about');
                 }}
                 style={{ cursor: "pointer", background: "none", border: "none", color: "inherit", fontSize: "inherit", fontWeight: "inherit" }}
@@ -78,11 +67,22 @@ function Navbar() {
               <button
                 onClick={() => {
                   openBar();
-                  scrollToId('faq');
+                  scrollToId('services');
                 }}
                 style={{ cursor: "pointer", background: "none", border: "none", color: "inherit", fontSize: "inherit", fontWeight: "inherit" }}
               >
-                SSS
+                Hizmetler
+              </button>
+            </li>
+            <li>
+              <button
+                onClick={() => {
+                  openBar();
+                  scrollToId('references');
+                }}
+                style={{ cursor: "pointer", background: "none", border: "none", color: "inherit", fontSize: "inherit", fontWeight: "inherit" }}
+              >
+                Referanslar
               </button>
             </li>
             <li>

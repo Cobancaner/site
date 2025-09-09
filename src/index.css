@@ -105,6 +105,17 @@ code {
 
 }
 
+/* Yeni responsive sınıflar */
+.col-lg-4 {
+  width: 33.333333%;
+}
+.col-md-6 {
+  width: 50%;
+}
+.mb-4 {
+  margin-bottom: 1.5rem!important;
+}
+
 .x {
   margin: 0rem 1rem!important;
   width:33.3%;
@@ -519,6 +530,12 @@ ul li a {
   .col-md-4 {
     width: 55.9%!important;
   }
+  .col-lg-4 {
+    width: 50%!important;
+  }
+  .col-md-6 {
+    width: 100%!important;
+  }
 
 }
 @media (max-width: 576px) { 
@@ -538,6 +555,16 @@ ul li a {
   .col-md-4 {
     
     width: 100%!important;
+  }
+  .col-lg-4 {
+    width: 100%!important;
+  }
+  .col-md-6 {
+    width: 100%!important;
+  }
+  .services .col-lg-4 {
+    margin: 1rem auto!important;
+    width: 87.9%!important;
   }
   .contact .col-md-4 {
     
@@ -656,4 +683,35 @@ ul li a {
 }
 .mb-1 {
   margin-bottom: 1rem!important;
+}
+
+/* References */
+.references {
+  padding: 3rem 0;
+  background-color: #fafafa;
+}
+
+.reference-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  height: 100%;
+}
+
+.reference-card:hover {
+  transform: translateY(-5px);
+}
+
+.reference-card h3 {
+  color: #111;
+  font-size: 24px;
+  margin-bottom: 1rem;
+}
+
+.reference-card p {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.6;
 }
