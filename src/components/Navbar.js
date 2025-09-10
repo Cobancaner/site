@@ -31,8 +31,16 @@ function Navbar() {
   }, []);
   function openBar() {
     const bar = document.querySelector(".bar");
-
+    const body = document.body;
+    
     bar.classList.toggle("opened");
+    
+    // Body scroll'u engelle/etkinleştir
+    if (bar.classList.contains("opened")) {
+      body.classList.add("hidescroll");
+    } else {
+      body.classList.remove("hidescroll");
+    }
   }
 
   return (
