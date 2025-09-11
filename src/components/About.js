@@ -1,34 +1,37 @@
+import { useLanguage } from '../contexts/LanguageContext';
+
 function About() {
+  const { t } = useLanguage();
   const publicUrl = process.env.PUBLIC_URL || '';
   const aboutSrc = `${publicUrl}/img/img1.png`;
 
   const stats = [
-    { number: "5+", label: "Yıllık Deneyim" },
-    { number: "50+", label: "Tamamlanan Proje" },
-    { number: "100%", label: "Müşteri Memnuniyeti" },
-    { number: "7/24", label: "Destek Hizmeti" }
+    { number: "5+", label: t('about.stats.experience') },
+    { number: "50+", label: t('about.stats.projects') },
+    { number: "100%", label: t('about.stats.satisfaction') },
+    { number: "7/24", label: t('about.stats.support') }
   ];
 
   const values = [
     {
       icon: "⚙",
-      title: "Kalite",
-      description: "Her projede en yüksek kalite standartlarını uyguluyoruz."
+      title: t('about.values.quality.title'),
+      description: t('about.values.quality.description')
     },
     {
       icon: "🤝",
-      title: "Güven",
-      description: "Müşterilerimizle uzun vadeli güven ilişkileri kuruyoruz."
+      title: t('about.values.trust.title'),
+      description: t('about.values.trust.description')
     },
     {
       icon: "♻",
-      title: "Sürdürülebilirlik",
-      description: "Çevre dostu ve sürdürülebilir yapılar inşa ediyoruz."
+      title: t('about.values.sustainability.title'),
+      description: t('about.values.sustainability.description')
     },
     {
       icon: "💡",
-      title: "Yenilik",
-      description: "Modern teknoloji ve yenilikçi çözümlerle fark yaratıyoruz."
+      title: t('about.values.innovation.title'),
+      description: t('about.values.innovation.description')
     }
   ];
 
@@ -42,16 +45,12 @@ function About() {
           <div className="about-hero">
             <div className="about-content">
               <div className="about-text">
-                <h2 className="about-title">Hakkımızda</h2>
+                <h2 className="about-title">{t('about.title')}</h2>
                 <p className="about-subtitle">
-                  2019 yılında İbrahim Çoban tarafından Bosna-Hersek&apos;in Brčko şehrinde kurulan
-                  İçtaş Yapı İnşaat doo, inşaat sektöründe güvenilir ve yenilikçi çözümler sunmayı
-                  amaçlayan bir firmadır.
+                  {t('about.subtitle')}
                 </p>
                 <p className="about-description">
-                  Kurulduğu günden bu yana kalite, güven ve müşteri memnuniyetini ön planda tutarak
-                  büyüyen şirketimiz; Bosna-Hersek&apos;in farklı bölgelerinde fabrika, alışveriş merkezi,
-                  depo ve konut projeleri başarıyla gerçekleştirmektedir.
+                  {t('about.description')}
                 </p>
               </div>
               <div className="about-image">
@@ -84,29 +83,25 @@ function About() {
           {/* Vision & Mission */}
           <div className="vision-mission">
             <div className="vision-card">
-              <h3 className="card-title">Vizyonumuz</h3>
+              <h3 className="card-title">{t('about.vision.title')}</h3>
               <p className="card-description">
-                Sürdürülebilir, yenilikçi ve güvenilir inşaat çözümleriyle, yaşam alanlarını geleceğe taşıyan
-                öncü bir firma olmak. Topluma değer katan projeler üreterek, modern şehirlerin gelişimine yön veren ve
-                uluslararası ölçekte tercih edilen bir marka haline gelmek.
+                {t('about.vision.description')}
               </p>
             </div>
 
             <div className="mission-card">
-              <h3 className="card-title">Misyonumuz</h3>
+              <h3 className="card-title">{t('about.mission.title')}</h3>
               <ul className="mission-list">
-                <li>Bosna-Hersek&apos;in farklı bölgelerinde fabrika, AVM, depo ve konut projeleriyle modern ve güvenilir yaşam ve iş alanları inşa etmek.</li>
-                <li>Müşterilerimize fonksiyonel, estetik ve uzun ömürlü yapılar sunarak yatırım değerini en üst seviyeye taşımak.</li>
-                <li>İnşaat sektöründe kalite, güvenlik ve sürdürülebilirlik ilkelerinden ödün vermeden çalışmak.</li>
-                <li>Teknoloji ve mühendisliği bir araya getirerek, çevreye duyarlı ve geleceğe dönük çözümler geliştirmek.</li>
-                <li>Çalışanlarımız, iş ortaklarımız ve toplum için değer üreten, şeffaf ve güvene dayalı bir iş anlayışıyla hareket etmek.</li>
+                {t('about.mission.items').map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
               </ul>
             </div>
           </div>
 
           {/* Values Section */}
           <div className="values-section">
-            <h3 className="section-title">Değerlerimiz</h3>
+            <h3 className="section-title">{t('about.values.title')}</h3>
             <div className="values-grid">
               {values.map((value, index) => (
                 <div key={index} className="value-card">

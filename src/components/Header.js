@@ -1,6 +1,8 @@
 import { useState } from 'react';
+import { useLanguage } from '../contexts/LanguageContext';
 
 function Header() {
+  const { t } = useLanguage();
   const [videoFailed, setVideoFailed] = useState(false);
   const videoSrc = '/video.mp4';
   const posterSrc = '/img/img1.png';
@@ -30,13 +32,13 @@ function Header() {
           style={{ objectFit: 'cover' }}
         >
           <source src={videoSrc} type="video/mp4" />
-          Tarayıcınız video elementini desteklemiyor.
+          {t('header.videoError')}
         </video>
       ) : (
         <img src={posterSrc} alt="video fallback" className="video-fallback" />
       )}
       <div className="header-content">
-        <h1>İÇTAŞ YAPI İNŞAAT D.O.O</h1>
+        <h1>{t('header.title')}</h1>
       </div>
        
       <div className="headerbg"></div>

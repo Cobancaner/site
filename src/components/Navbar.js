@@ -1,6 +1,9 @@
 import { useEffect } from 'react';
+import { useLanguage } from '../contexts/LanguageContext';
+import LanguageSwitcher from './LanguageSwitcher';
 
 function Navbar() {
+  const { t } = useLanguage();
   const scrollToId = (id) => {
     const el = document.getElementById(id);
     if (el) {
@@ -47,7 +50,9 @@ function Navbar() {
     <nav className="navbar">
       <div className="container">
         <div className="row">
-          
+          <div className="navbar-left">
+            <LanguageSwitcher />
+          </div>
           <ul className="bar">
             <li>
               <button
@@ -57,7 +62,7 @@ function Navbar() {
                 }}
                 style={{ cursor: "pointer", background: "none", border: "none", color: "inherit", fontSize: "inherit", fontWeight: "inherit" }}
               >
-                Anasayfa
+                {t('nav.home')}
               </button>
             </li>
             <li>
@@ -68,7 +73,7 @@ function Navbar() {
                 }}
                 style={{ cursor: "pointer", background: "none", border: "none", color: "inherit", fontSize: "inherit", fontWeight: "inherit" }}
               >
-                Hakkımızda
+                {t('nav.about')}
               </button>
             </li>
             <li>
@@ -79,7 +84,7 @@ function Navbar() {
                 }}
                 style={{ cursor: "pointer", background: "none", border: "none", color: "inherit", fontSize: "inherit", fontWeight: "inherit" }}
               >
-                Hizmetlerimiz
+                {t('nav.services')}
               </button>
             </li>
             <li>
@@ -90,7 +95,7 @@ function Navbar() {
                 }}
                 style={{ cursor: "pointer", background: "none", border: "none", color: "inherit", fontSize: "inherit", fontWeight: "inherit" }}
               >
-                Referanslarımız
+                {t('nav.references')}
               </button>
             </li>
             <li>
@@ -101,7 +106,7 @@ function Navbar() {
                 }}
                 style={{ cursor: "pointer", background: "none", border: "none", color: "inherit", fontSize: "inherit", fontWeight: "inherit" }}
               >
-                İletişim
+                {t('nav.contact')}
               </button>
             </li>
           </ul>

@@ -1,41 +1,44 @@
+import { useLanguage } from '../contexts/LanguageContext';
+
 function Services() {
+  const { t } = useLanguage();
   const services = [
     {
       image: "card1.png",
-      title: "Konut İnşaatı",
-      description: "Modern ve konforlu konut projeleri ile hayalinizdeki evi gerçeğe dönüştürüyoruz."
+      title: t('services.residential.title'),
+      description: t('services.residential.description')
     },
     {
       image: "card2.png",
-      title: "Ticari Yapılar",
-      description: "Ofis binaları, alışveriş merkezleri ve ticari kompleksler inşa ediyoruz."
+      title: t('services.commercial.title'),
+      description: t('services.commercial.description')
     },
     {
       image: "card3.png",
-      title: "Endüstriyel Tesisler",
-      description: "Fabrika, depo ve endüstriyel tesisler için güvenli ve dayanıklı yapılar."
+      title: t('services.industrial.title'),
+      description: t('services.industrial.description')
     },
     {
       image: "card1.png",
-      title: "Altyapı Projeleri",
-      description: "Yol, köprü, tünel ve diğer altyapı projelerinde uzman ekibimizle hizmet veriyoruz."
+      title: t('services.infrastructure.title'),
+      description: t('services.infrastructure.description')
     },
     {
       image: "card2.png",
-      title: "Renovasyon",
-      description: "Mevcut yapıların yenilenmesi ve modernizasyonu konusunda profesyonel çözümler."
+      title: t('services.renovation.title'),
+      description: t('services.renovation.description')
     },
     {
       image: "card3.png",
-      title: "Proje Yönetimi",
-      description: "A'dan Z'ye proje yönetimi ile zamanında ve bütçe dostu teslimat garantisi."
+      title: t('services.projectManagement.title'),
+      description: t('services.projectManagement.description')
     }
   ];
 
   return (
     <div id="services" className="services-section">
       <div className="container">
-        <h2 className="services-title">Hizmetlerimiz</h2>
+        <h2 className="services-title">{t('services.title')}</h2>
         <div className="services-grid">
           {services.map((service, index) => (
             <div key={index} className="service-card">

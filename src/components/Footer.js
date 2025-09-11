@@ -1,6 +1,8 @@
 import Image from 'next/image';
+import { useLanguage } from '../contexts/LanguageContext';
 
 function Footer() {
+  const { t } = useLanguage();
   const scrollToId = (id) => {
     const el = document.getElementById(id);
     if (el) {
@@ -17,9 +19,9 @@ function Footer() {
           <div className="side1">
             <div className="row">
               <div className="col-md-3">
-                <h1 className="logo">İÇTAŞ İNŞAAT D.O.O</h1>
+                <h1 className="logo">{t('footer.companyName')}</h1>
                 <p className="footer-text">
-                  Kalite, güven ve sürdürülebilirlik ilkeleriyle projeler geliştiriyoruz.
+                  {t('footer.description')}
                 </p>
               </div>
               
@@ -29,7 +31,7 @@ function Footer() {
             <div className="row">
               
               <div className="col-md-3">
-                <p className="footer-title">Sosyal Medya</p>
+                <p className="footer-title">{t('footer.socialMedia')}</p>
                 <ul className="social-links">
                   <li>
                     <a
@@ -39,7 +41,7 @@ function Footer() {
                       href="https://www.instagram.com/ictasyapi/"
                       aria-label="Instagram - ictasyapi"
                     >
-                      <span style={{marginRight:'8px'}}>📷</span> Instagram
+                      <span style={{marginRight:'8px'}}>📷</span> {t('footer.instagram')}
                     </a>
                   </li>
                 </ul>

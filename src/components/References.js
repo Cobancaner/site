@@ -1,27 +1,30 @@
+import { useLanguage } from '../contexts/LanguageContext';
+
 function References() {
+  const { t } = useLanguage();
   const publicUrl = process.env.PUBLIC_URL || '';
   
   const references = [
     {
       image: `${publicUrl}/referance/bau_partner.jpg`,
-      title: "Bau Partner",
-      description: "Endüstriyel tesis projelerinde güvenilir iş ortağımız"
+      title: t('references.bauPartner.title'),
+      description: t('references.bauPartner.description')
     },
     {
       image: `${publicUrl}/referance/temax.jpg`,
-      title: "Temax",
-      description: "Modern ve sürdürülebilir yapı çözümleri"
+      title: t('references.temax.title'),
+      description: t('references.temax.description')
     },
     {
       image: `${publicUrl}/referance/bb.jpg`,
-      title: "BB Projeleri",
-      description: "Başarıyla tamamlanan konut ve ticari projeler"
+      title: t('references.bbProjects.title'),
+      description: t('references.bbProjects.description')
     }
   ];
 
   return (
     <div id="references" className="container references">
-      <h2 className="main-title text-center">Referanslarımız</h2>
+      <h2 className="main-title text-center">{t('references.title')}</h2>
       <div className="references-content">
         <div className="col-md-12">
           <div className="row">
