@@ -20,55 +20,25 @@ function Footer() {
                   Kalite, güven ve sürdürülebilirlik ilkeleriyle projeler geliştiriyoruz.
                 </p>
               </div>
-              <div className="col-md-3">
-                <p className="footer-title">Önemli Bağlantılar</p>
-                <ul>
-                  <li>
-                  <button   
-                         onClick={() => scrollToId('home')}
-                         style={{ cursor: "pointer", background: "none", border: "none", color: "inherit", fontSize: "inherit", fontWeight: "inherit" }}
-                  > Anasayfa </button>
-                  </li>
-                  <li>
-                  <button onClick={() => scrollToId('services')} style={{ cursor: "pointer", background: "none", border: "none", color: "inherit", fontSize: "inherit", fontWeight: "inherit" }}> Hizmetler </button>
-                  </li>
-                  <li>
-                  <button onClick={() => scrollToId('about')} style={{ cursor: "pointer", background: "none", border: "none", color: "inherit", fontSize: "inherit", fontWeight: "inherit" }}> Hakkımızda  </button>
-                  </li>
-                  <li>
-                  <button onClick={() => scrollToId('contact')} style={{ cursor: "pointer", background: "none", border: "none", color: "inherit", fontSize: "inherit", fontWeight: "inherit" }}> İletişim  </button>
-                  </li>
-                </ul>
-              </div>
+              
             </div>
           </div>
           <div className="side2">
             <div className="row">
-              <div className="col-md-3">
-                <p className="footer-title">İletişim</p>
-                <ul>
-                  <li>
-                    <button style={{ cursor: "pointer", background: "none", border: "none", color: "inherit", fontSize: "inherit", fontWeight: "inherit" }}>burhankcd@gmail.com</button>
-                  </li>
-                  <li>
-                    <button style={{ cursor: "pointer", background: "none", border: "none", color: "inherit", fontSize: "inherit", fontWeight: "inherit" }}> Burhan #3265</button>
-                  </li>
-                  <li>
-                    <button style={{ cursor: "pointer", background: "none", border: "none", color: "inherit", fontSize: "inherit", fontWeight: "inherit" }}>0212 444 44 44</button>
-                  </li>
-                </ul>
-              </div>
+              
               <div className="col-md-3">
                 <p className="footer-title">Sosyal Medya</p>
-                <ul>
+                <ul className="social-links">
                   <li>
-                    <a target="_blank" rel="noreferrer" href="https://github.com/darkleas" > Github</a>
-                  </li>
-                  <li>
-                    <a target="_blank" rel="noreferrer" href="https://twitter.com/burhankocadag0" > Twitter</a>
-                  </li>
-                  <li>
-                    <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/burhan-kocada%C4%9F-49a3331a5/"> Linkedin</a>
+                    <a
+                      className="social-btn instagram"
+                      target="_blank"
+                      rel="noreferrer"
+                      href="https://www.instagram.com/ictasyapi/"
+                      aria-label="Instagram - ictasyapi"
+                    >
+                      <span style={{marginRight:'8px'}}>📷</span> Instagram
+                    </a>
                   </li>
                 </ul>
               </div>
