@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_pages-dir-node_src_translations_bs_json";
+exports.ids = ["_pages-dir-node_src_translations_bs_json"];
+exports.modules = {
+
+/***/ "(pages-dir-node)/./src/translations/bs.json":
+/*!**********************************!*\
+  !*** ./src/translations/bs.json ***!
+  \**********************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"nav":{"home":"Početna","about":"O nama","services":"Usluge","references":"Reference","contact":"Kontakt"},"header":{"title":"İÇTAŞ YAPI İNŞAAT D.O.O","videoError":"Vaš preglednik ne podržava video element."},"about":{"title":"O nama","subtitle":"Osnovana 2019. godine od strane İbrahima Çobana u Brčkom, Bosna i Hercegovina, İçtaş Yapı İnşaat doo je kompanija koja ima za cilj pružanje pouzdanih i inovativnih rješenja u građevinskom sektoru.","description":"Od svog osnivanja, naša kompanija, koja je rasla stavljajući kvalitet, povjerenje i zadovoljstvo kupaca u prvi plan; uspješno realizuje fabričke, trgovačke centre, skladišta i stambene projekte u različitim regijama Bosne i Hercegovine.","stats":{"experience":"Godina iskustva","projects":"Završeni projekti","satisfaction":"Zadovoljstvo kupaca","support":"Usluga podrške"},"vision":{"title":"Naša vizija","description":"Biti pionirska kompanija koja nosi životne prostore u budućnost održivim, inovativnim i pouzdanim građevinskim rješenjima. Postati brend koji se preferira na međunarodnoj razini stvaranjem projekata koji dodaju vrijednost društvu i usmjeravanjem razvoja modernih gradova."},"mission":{"title":"Naša misija","items":["Graditi moderne i pouzdane životne i poslovne prostore sa fabričkim, trgovačkim centrima, skladištima i stambenim projektima u različitim regijama Bosne i Hercegovine.","Maksimizirati investicijsku vrijednost nudeći funkcionalne, estetske i dugotrajne strukture našim kupcima.","Raditi bez kompromisa o principima kvaliteta, sigurnosti i održivosti u građevinskom sektoru.","Razvijati ekološki prihvatljiva i budućnost orijentirana rješenja kombinovanjem tehnologije i inženjerstva.","Djelovati s transparentnim i povjerenje zasnovanim poslovnim razumijevanjem koje stvara vrijednost za naše zaposlene, poslovne partnere i društvo."]},"values":{"title":"Naše vrijednosti","quality":{"title":"Kvalitet","description":"Primjenjujemo najviše standarde kvaliteta u svakom projektu."},"trust":{"title":"Povjerenje","description":"Gradimo dugoročne odnose povjerenja sa našim kupcima."},"sustainability":{"title":"Održivost","description":"Gradimo ekološki prihvatljive i održive strukture."},"innovation":{"title":"Inovacija","description":"Pravimo razliku modernom tehnologijom i inovativnim rješenjima."}}},"services":{"title":"Naše usluge","residential":{"title":"Stambena gradnja","description":"Vaš san o domu pretvaramo u stvarnost modernim i udobnim stambenim projektima."},"commercial":{"title":"Komercijalne zgrade","description":"Gradimo poslovne zgrade, trgovačke centre i komercijalne komplekse."},"industrial":{"title":"Industrijski objekti","description":"Sigurne i izdržljive strukture za fabrike, skladišta i industrijske objekte."},"infrastructure":{"title":"Infrastrukturni projekti","description":"Služimo sa našim stručnim timom u cestovnim, mostovnim, tunelskim i drugim infrastrukturnim projektima."},"renovation":{"title":"Renovacija","description":"Profesionalna rješenja za obnovu i modernizaciju postojećih struktura."},"projectManagement":{"title":"Upravljanje projektima","description":"Garantija isporuke na vrijeme i proračunski prihvatljiva sa upravljanjem projektima od A do Z."}},"references":{"title":"Naše reference","bauPartner":{"title":"Bau Partner","description":"Naš pouzdani poslovni partner u industrijskim objektima"},"temax":{"title":"Temax","description":"Moderna i održiva građevinska rješenja"},"bbProjects":{"title":"BB Projekti","description":"Uspješno završeni stambeni i komercijalni projekti"}},"contact":{"title":"Kontakt","form":{"name":"Ime i prezime","email":"E-pošta","subject":"Tema","message":"Vaša poruka","submit":"Pošaljite poruku"}},"footer":{"companyName":"İÇTAŞ İNŞAAT D.O.O","description":"Razvijamo projekte sa principima kvaliteta, povjerenja i održivosti.","socialMedia":"Društvene mreže","instagram":"Instagram"}}');
+
+/***/ })
+
+};
+;

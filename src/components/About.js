@@ -1,7 +1,7 @@
 import { useLanguage } from '../contexts/LanguageContext';
 
 function About() {
-  const { t } = useLanguage();
+  const { t, isLoading } = useLanguage();
   const publicUrl = process.env.PUBLIC_URL || '';
   const aboutSrc = `${publicUrl}/img/img1.png`;
 
@@ -92,7 +92,7 @@ function About() {
             <div className="mission-card">
               <h3 className="card-title">{t('about.mission.title')}</h3>
               <ul className="mission-list">
-                {t('about.mission.items').map((item, index) => (
+                {!isLoading && Array.isArray(t('about.mission.items')) && t('about.mission.items').map((item, index) => (
                   <li key={index}>{item}</li>
                 ))}
               </ul>

@@ -13,10 +13,12 @@ export const useLanguage = () => {
 export const LanguageProvider = ({ children }) => {
   const [language, setLanguage] = useState('tr');
   const [translations, setTranslations] = useState({});
+  const [isLoading, setIsLoading] = useState(true);
 
   // Dil değiştiğinde çevirileri yükle
   useEffect(() => {
     const loadTranslations = async () => {
+      setIsLoading(true);
       try {
         const translationModule = await import(`../translations/${language}.json`);
         setTranslations(translationModule.default || translationModule);
@@ -27,6 +29,8 @@ export const LanguageProvider = ({ children }) => {
           const fallbackModule = await import('../translations/tr.json');
           setTranslations(fallbackModule.default || fallbackModule);
         }
+      } finally {
+        setIsLoading(false);
       }
     };
 
@@ -63,6 +67,12 @@ export const LanguageProvider = ({ children }) => {
       }
     }
     
+    // Eğer value undefined veya null ise, key'i döndür
+    if (value === undefined || value === null) {
+      console.warn(`Çeviri değeri bulunamadı: ${key}`);
+      return key;
+    }
+    
     return value;
   };
 
@@ -70,7 +80,8 @@ export const LanguageProvider = ({ children }) => {
     language,
     changeLanguage,
     t,
-    translations
+    translations,
+    isLoading
   };
 
   return (

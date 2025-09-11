@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "src_translations_en_json";
+exports.ids = ["src_translations_en_json"];
+exports.modules = {
+
+/***/ "./src/translations/en.json":
+/*!**********************************!*\
+  !*** ./src/translations/en.json ***!
+  \**********************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"nav":{"home":"Home","about":"About Us","services":"Services","references":"References","contact":"Contact"},"header":{"title":"İÇTAŞ YAPI İNŞAAT D.O.O","videoError":"Your browser does not support the video element."},"about":{"title":"About Us","subtitle":"Founded in 2019 by İbrahim Çoban in Brčko, Bosnia and Herzegovina, İçtaş Yapı İnşaat doo is a company that aims to provide reliable and innovative solutions in the construction sector.","description":"Since its establishment, our company, which has grown by prioritizing quality, trust and customer satisfaction; successfully carries out factory, shopping center, warehouse and housing projects in different regions of Bosnia and Herzegovina.","stats":{"experience":"Years of Experience","projects":"Completed Projects","satisfaction":"Customer Satisfaction","support":"Support Service"},"vision":{"title":"Our Vision","description":"To be a pioneering company that carries living spaces to the future with sustainable, innovative and reliable construction solutions. To become a brand preferred on an international scale by producing projects that add value to society and guiding the development of modern cities."},"mission":{"title":"Our Mission","items":["To build modern and reliable living and business spaces with factory, shopping center, warehouse and housing projects in different regions of Bosnia and Herzegovina.","To maximize investment value by offering functional, aesthetic and durable structures to our customers.","To work without compromising the principles of quality, safety and sustainability in the construction sector.","To develop environmentally friendly and future-oriented solutions by combining technology and engineering.","To act with a transparent and trust-based business understanding that creates value for our employees, business partners and society."]},"values":{"title":"Our Values","quality":{"title":"Quality","description":"We apply the highest quality standards in every project."},"trust":{"title":"Trust","description":"We build long-term trust relationships with our customers."},"sustainability":{"title":"Sustainability","description":"We build environmentally friendly and sustainable structures."},"innovation":{"title":"Innovation","description":"We make a difference with modern technology and innovative solutions."}}},"services":{"title":"Our Services","residential":{"title":"Residential Construction","description":"We turn your dream home into reality with modern and comfortable housing projects."},"commercial":{"title":"Commercial Buildings","description":"We build office buildings, shopping centers and commercial complexes."},"industrial":{"title":"Industrial Facilities","description":"Safe and durable structures for factories, warehouses and industrial facilities."},"infrastructure":{"title":"Infrastructure Projects","description":"We serve with our expert team in road, bridge, tunnel and other infrastructure projects."},"renovation":{"title":"Renovation","description":"Professional solutions for renovation and modernization of existing structures."},"projectManagement":{"title":"Project Management","description":"On-time and budget-friendly delivery guarantee with A-to-Z project management."}},"references":{"title":"Our References","bauPartner":{"title":"Bau Partner","description":"Our reliable business partner in industrial facility projects"},"temax":{"title":"Temax","description":"Modern and sustainable building solutions"},"bbProjects":{"title":"BB Projects","description":"Successfully completed residential and commercial projects"}},"contact":{"title":"Contact","form":{"name":"Full Name","email":"Email","subject":"Subject","message":"Your Message","submit":"Send Message"}},"footer":{"companyName":"İÇTAŞ İNŞAAT D.O.O","description":"We develop projects with principles of quality, trust and sustainability.","socialMedia":"Social Media","instagram":"Instagram"}}');
+
+/***/ })
+
+};
+;
