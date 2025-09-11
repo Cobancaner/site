@@ -50,10 +50,10 @@ function Footer() {
       </div>
       <div className="footer-bottom-logo">
         <Image 
-          src="../public/img/img1.png" 
+          src="/img/img1.png" 
           alt="İÇTAŞ YAPI İNŞAAT" 
-          width={120}
-          height={120}
+          width={80}
+          height={80}
           className="footer-bottom-logo-img"
           onError={(e) => {
             console.log('Logo yüklenemedi:', e.target.src);
