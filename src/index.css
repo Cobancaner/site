@@ -422,6 +422,233 @@ footer ul li a {
   z-index: 1;
 }
 
+/* Footer Mobile */
+@media (max-width: 768px) {
+  footer {
+    padding: 2rem 0 4rem 0;
+  }
+  
+  .footer-bottom-logo {
+    position: static;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  .footer-bottom-logo-img {
+    max-width: 80px;
+    height: auto;
+  }
+  
+  .side1, .side2 {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  
+  .footer .row {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .logo {
+    font-size: 20px;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-text {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .footer-title {
+    font-size: 18px;
+    margin-bottom: 1rem;
+  }
+  
+  .social-btn {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+}
+
+/* Contact Mobile */
+@media (max-width: 768px) {
+  .contact {
+    padding: 2rem 0;
+  }
+  
+  .main-title {
+    font-size: 28px;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-card {
+    padding: 1.5rem;
+    margin: 0 1rem;
+  }
+  
+  .form-row {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .contact-input,
+  .contact-textarea {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 16px;
+  }
+  
+  .contact-textarea {
+    min-height: 120px;
+  }
+  
+  .form-btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+  }
+}
+
+/* Small Mobile Optimizations */
+@media (max-width: 576px) {
+  /* Header Small Mobile */
+  header h1 {
+    font-size: 24px !important;
+    padding: 0 0.5rem;
+  }
+  
+  .header-content {
+    padding: 1rem 0.5rem;
+  }
+  
+  /* Navbar Small Mobile */
+  .navbar .row {
+    padding: 0 0.5rem;
+  }
+  
+  .language-button {
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+  }
+  
+  .language-option {
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+  }
+  
+  .navbar ul li a,
+  .navbar ul li button {
+    font-size: 20px;
+    padding: 12px 25px;
+  }
+  
+  /* About Small Mobile */
+  .about-title {
+    font-size: 24px;
+  }
+  
+  .about-subtitle {
+    font-size: 14px;
+  }
+  
+  .about-description {
+    font-size: 13px;
+  }
+  
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .vision-mission {
+    gap: 1rem;
+  }
+  
+  .vision-card,
+  .mission-card {
+    padding: 1rem;
+  }
+  
+  .card-title {
+    font-size: 20px;
+  }
+  
+  .card-description {
+    font-size: 13px;
+  }
+  
+  .mission-list li {
+    font-size: 13px;
+  }
+  
+  /* Services Small Mobile */
+  .services-title {
+    font-size: 24px;
+  }
+  
+  .service-card {
+    padding: 1.5rem 1rem;
+  }
+  
+  .service-title {
+    font-size: 18px;
+  }
+  
+  .service-description {
+    font-size: 13px;
+  }
+  
+  /* Contact Small Mobile */
+  .main-title {
+    font-size: 24px;
+  }
+  
+  .contact-card {
+    margin: 0 0.5rem;
+    padding: 1rem;
+  }
+  
+  .contact-input,
+  .contact-textarea {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+  
+  .form-btn {
+    padding: 12px;
+    font-size: 14px;
+  }
+  
+  /* Footer Small Mobile */
+  .logo {
+    font-size: 18px;
+  }
+  
+  .footer-text {
+    font-size: 13px;
+  }
+  
+  .footer-title {
+    font-size: 16px;
+  }
+  
+  .social-btn {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+  
+  .footer-bottom-logo-img {
+    max-width: 60px;
+  }
+}
+
 .footer-bottom-logo-img {
   max-width: 120px;
   height: auto;
@@ -775,17 +1002,142 @@ ul li a {
 }
 
 @media (max-width: 768px) { 
+  /* Header Mobile */
   header h1 {
     text-align: center;
-    font-size: 44px!important;
+    font-size: 32px !important;
+    line-height: 1.2;
+    padding: 0 1rem;
   }
+  
+  .header-content {
+    padding: 2rem 1rem;
+  }
+  
+  /* Container Mobile */
   .container {
-    max-width: 720px;
+    max-width: 100%;
+    padding: 0 1rem;
   }
+  
+  /* Navbar Mobile */
+  .navbar {
+    backdrop-filter: none;
+    padding: 10px 0;
+  }
+  
+  .navbar .row {
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+  }
+  
+  .navbar-left {
+    z-index: 10;
+  }
+  
   .navbar ul { 
-    margin-left: 0rem;
+    backdrop-filter: blur(20px);
+    background: linear-gradient(135deg, rgba(1, 6, 6, 0.95) 0%, rgba(0, 0, 0, 0.9) 100%);
+    z-index: 5;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
     list-style: none;
+    margin: 0;
+    padding: 0;
   }
+
+  .navbar ul.opened {
+    z-index: 5;
+    transform: translateX(0);
+  }
+
+  .navbar ul li {
+    margin: 1.5rem 0;
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .navbar ul:not(.opened) li {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  
+  .navbar ul.opened li {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .navbar ul.opened li:nth-child(1) { transition-delay: 0.1s; }
+  .navbar ul.opened li:nth-child(2) { transition-delay: 0.2s; }
+  .navbar ul.opened li:nth-child(3) { transition-delay: 0.3s; }
+  .navbar ul.opened li:nth-child(4) { transition-delay: 0.4s; }
+  .navbar ul.opened li:nth-child(5) { transition-delay: 0.5s; }
+  
+  .navbar ul li a,
+  .navbar ul li button {
+    cursor: pointer;
+    font-size: 24px;
+    text-decoration: none;
+    color: #fafafa;
+    font-weight: 100;
+    position: relative;
+    overflow: hidden;
+    padding: 15px 30px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    background: none;
+    border: none;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .navbar ul li a:hover,
+  .navbar ul li button:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateX(10px);
+    color: #ffffff;
+  }
+  
+  /* Language Switcher Mobile */
+  .language-switcher {
+    position: relative;
+    z-index: 10;
+  }
+  
+  .language-button {
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+  }
+  
+  .language-options {
+    min-width: 50px;
+    padding: 6px;
+  }
+  
+  .language-option {
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+  }
+  
+  /* Hamburger Menu */
+  .button {
+    z-index: 10;
+    position: relative;
+  }
+  
   .col-md-4 {
     width: 55.9%!important;
   }
@@ -795,7 +1147,6 @@ ul li a {
   .col-md-6 {
     width: 100%!important;
   }
-
 }
 @media (max-width: 576px) { 
   .col-md-4:first-child {
@@ -1283,7 +1634,7 @@ ul li a {
 
 @media (max-width: 768px) {
   .about-section {
-    padding: 1rem 0;
+    padding: 2rem 0;
   }
   
   .about-hero {
