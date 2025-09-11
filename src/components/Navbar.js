@@ -79,7 +79,7 @@ function Navbar() {
                 }}
                 style={{ cursor: "pointer", background: "none", border: "none", color: "inherit", fontSize: "inherit", fontWeight: "inherit" }}
               >
-                Hizmetler
+                Hizmetlerimiz
               </button>
             </li>
             <li>
@@ -90,7 +90,7 @@ function Navbar() {
                 }}
                 style={{ cursor: "pointer", background: "none", border: "none", color: "inherit", fontSize: "inherit", fontWeight: "inherit" }}
               >
-                Referanslar
+                Referanslarımız
               </button>
             </li>
             <li>

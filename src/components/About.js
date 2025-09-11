@@ -6,7 +6,7 @@ function About() {
     { number: "5+", label: "Yıllık Deneyim" },
     { number: "50+", label: "Tamamlanan Proje" },
     { number: "100%", label: "Müşteri Memnuniyeti" },
-    { number: "24/7", label: "Destek Hizmeti" }
+    { number: "7/24", label: "Destek Hizmeti" }
   ];
 
   const values = [

@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 function Footer() {
   const scrollToId = (id) => {
     const el = document.getElementById(id);
@@ -15,7 +17,7 @@ function Footer() {
           <div className="side1">
             <div className="row">
               <div className="col-md-3">
-                <h1 className="logo">İÇTAŞ İNŞAAT</h1>
+                <h1 className="logo">İÇTAŞ İNŞAAT D.O.O</h1>
                 <p className="footer-text">
                   Kalite, güven ve sürdürülebilirlik ilkeleriyle projeler geliştiriyoruz.
                 </p>
@@ -45,6 +47,18 @@ function Footer() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="footer-bottom-logo">
+        <Image 
+          src="../public/img/img1.png" 
+          alt="İÇTAŞ YAPI İNŞAAT" 
+          width={120}
+          height={120}
+          className="footer-bottom-logo-img"
+          onError={(e) => {
+            console.log('Logo yüklenemedi:', e.target.src);
+          }}
+        />
       </div>
       <button onClick={() => scrollToId('home')} className="gotop"><i className="fas fa-level-up-alt"></i></button>
 
