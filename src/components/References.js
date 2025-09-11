@@ -8,14 +8,14 @@ function References() {
       description: "Endüstriyel tesis projelerinde güvenilir iş ortağımız"
     },
     {
-      image: `${publicUrl}/referance/bb.jpg`,
-      title: "BB Projeleri",
-      description: "Başarıyla tamamlanan konut ve ticari projeler"
-    },
-    {
       image: `${publicUrl}/referance/temax.jpg`,
       title: "Temax",
       description: "Modern ve sürdürülebilir yapı çözümleri"
+    },
+    {
+      image: `${publicUrl}/referance/bb.jpg`,
+      title: "BB Projeleri",
+      description: "Başarıyla tamamlanan konut ve ticari projeler"
     }
   ];
 
