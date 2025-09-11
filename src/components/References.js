@@ -1,28 +1,48 @@
 function References() {
+  const publicUrl = process.env.PUBLIC_URL || '';
+  
+  const references = [
+    {
+      image: `${publicUrl}/referance/bau_partner.jpg`,
+      title: "Bau Partner",
+      description: "Endüstriyel tesis projelerinde güvenilir iş ortağımız"
+    },
+    {
+      image: `${publicUrl}/referance/bb.jpg`,
+      title: "BB Projeleri",
+      description: "Başarıyla tamamlanan konut ve ticari projeler"
+    },
+    {
+      image: `${publicUrl}/referance/temax.jpg`,
+      title: "Temax",
+      description: "Modern ve sürdürülebilir yapı çözümleri"
+    }
+  ];
+
   return (
     <div id="references" className="container references">
       <h2 className="main-title text-center">Referanslarımız</h2>
       <div className="references-content">
         <div className="col-md-12">
           <div className="row">
-            <div className="col-lg-4 col-md-6 mb-4">
-              <div className="reference-card">
-                <h3>Konut Projeleri</h3>
-                <p>50+ başarılı konut projesi ile müşteri memnuniyeti sağladık.</p>
+            {references.map((ref, index) => (
+              <div key={index} className="col-lg-4 col-md-6 mb-4">
+                <div className="reference-card">
+                  <div className="reference-image">
+                    <img 
+                      src={ref.image} 
+                      alt="referans görseli"
+                      onError={(e) => {
+                        if (e.currentTarget.src !== ref.image) {
+                          e.currentTarget.src = ref.image;
+                        }
+                      }}
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
               </div>
-            </div>
-            <div className="col-lg-4 col-md-6 mb-4">
-              <div className="reference-card">
-                <h3>Ticari Yapılar</h3>
-                <p>Ofis binaları ve alışveriş merkezlerinde uzman çözümler sunduk.</p>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6 mb-4">
-              <div className="reference-card">
-                <h3>Endüstriyel Tesisler</h3>
-                <p>Güvenli ve dayanıklı endüstriyel tesisler inşa ettik.</p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>

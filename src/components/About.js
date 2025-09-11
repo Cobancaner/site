@@ -84,7 +84,6 @@ function About() {
           {/* Vision & Mission */}
           <div className="vision-mission">
             <div className="vision-card">
-              <div className="card-icon">🎯</div>
               <h3 className="card-title">Vizyonumuz</h3>
               <p className="card-description">
                 Sürdürülebilir, yenilikçi ve güvenilir inşaat çözümleriyle, yaşam alanlarını geleceğe taşıyan
@@ -94,7 +93,6 @@ function About() {
             </div>
 
             <div className="mission-card">
-              <div className="card-icon">🚀</div>
               <h3 className="card-title">Misyonumuz</h3>
               <ul className="mission-list">
                 <li>Bosna-Hersek&apos;in farklı bölgelerinde fabrika, AVM, depo ve konut projeleriyle modern ve güvenilir yaşam ve iş alanları inşa etmek.</li>
